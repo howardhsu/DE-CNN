@@ -58,7 +58,7 @@ Optional:
 0. install AllenNLP to if you want to use the CRF layer. (https://github.com/allenai/allennlp)
 
 
-Citation
+If you find our code useful, please cite our paper.
 ```
 @InProceedings{xu_acl2018,
   author    = {Xu, Hu and Liu, Bing and Shu, Lei and Yu, Philip S.},
