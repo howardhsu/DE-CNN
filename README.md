@@ -56,3 +56,14 @@ python script/evaluation.py --domain restaurant
 
 Optional: 
 0. install AllenNLP to if you want to use the CRF layer. (https://github.com/allenai/allennlp)
+
+
+Citation
+```
+@InProceedings{xu_acl2018,
+  author    = {Xu, Hu and Liu, Bing and Shu, Lei and Yu, Philip S.},
+  title     = {Double Embeddings and CNN-based Sequence Labeling for Aspect Extraction},
+  booktitle = {ACL},
+  year      = {2018}
+}
+```
