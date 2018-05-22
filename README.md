@@ -11,8 +11,9 @@ Step 3:
 Download and install fastText (https://github.com/facebookresearch/fastText) to fastText/
 
 Step 4: 
-Download official datasets to data/official_data/
+Download official datasets to data/official_data/ 
 We assume the following file names.
+
 SemEval 2014 Laptop (http://alt.qcri.org/semeval2014/task4/):
 Laptops_Test_Data_PhaseA.xml
 Laptops_Test_Gold.xml
