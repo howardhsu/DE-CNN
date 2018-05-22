@@ -3,6 +3,7 @@ Code for paper "Double Embeddings and CNN-based Sequence Labeling for Aspect Ext
 
 
 All code are tested under python 3.6.2 + pytorch 0.2.0_4
+
 Step 1: Download general embeddings (GloVe: http://nlp.stanford.edu/data/glove.840B.300d.zip ), save it in data/embedding/gen.vec 
 
 Step 2: Download Domain Embeddings (You can find the link under this paper's title in https://www.cs.uic.edu/~hxu/ ), save them in data/embedding
@@ -54,10 +55,6 @@ Evaluate Restaurant dataset
 ```
 python script/evaluation.py --domain restaurant 
 ```
-
-Optional: 
-0. install AllenNLP to if you want to use the CRF layer. (https://github.com/allenai/allennlp)
-
 
 If you find our code useful, please cite our paper.
 ```
