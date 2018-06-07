@@ -13,7 +13,9 @@ Download and install fastText (https://github.com/facebookresearch/fastText) to 
 
 Step 4: 
 Download official datasets to data/official_data/
+
 Download official evaluation scripts to script/
+
 We assume the following file names.
 
 SemEval 2014 Laptop (http://alt.qcri.org/semeval2014/task4/):
