@@ -12,17 +12,19 @@ Step 3:
 Download and install fastText (https://github.com/facebookresearch/fastText) to fastText/
 
 Step 4: 
-Download official datasets to data/official_data/ 
+Download official datasets to data/official_data/
+Download official evaluation scripts to script/
 We assume the following file names.
 
 SemEval 2014 Laptop (http://alt.qcri.org/semeval2014/task4/):
-Laptops_Test_Data_PhaseA.xml
-Laptops_Test_Gold.xml
+data/official_data/Laptops_Test_Data_PhaseA.xml
+data/official_data/Laptops_Test_Gold.xml
+script/eval.jar
 
 SemEval 2016 Restaurant (http://alt.qcri.org/semeval2016/task5/)
-EN_REST_SB1_TEST.xml.A
-EN_REST_SB1_TEST.xml.gold
-
+data/official_data/EN_REST_SB1_TEST.xml.A
+data/official_data/EN_REST_SB1_TEST.xml.gold
+script/A.jar
 
 Step 5: Run prep_embedding.py to build numpy files for general embeddings and domain embeddings.
 ```
