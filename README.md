@@ -17,13 +17,19 @@ Download official evaluation scripts to script/
 We assume the following file names.
 
 SemEval 2014 Laptop (http://alt.qcri.org/semeval2014/task4/):
+
 data/official_data/Laptops_Test_Data_PhaseA.xml
+
 data/official_data/Laptops_Test_Gold.xml
+
 script/eval.jar
 
 SemEval 2016 Restaurant (http://alt.qcri.org/semeval2016/task5/)
+
 data/official_data/EN_REST_SB1_TEST.xml.A
+
 data/official_data/EN_REST_SB1_TEST.xml.gold
+
 script/A.jar
 
 Step 5: Run prep_embedding.py to build numpy files for general embeddings and domain embeddings.
