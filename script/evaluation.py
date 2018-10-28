@@ -231,20 +231,21 @@ def evaluate(runs, data_dir, model_dir, domain, command, template):
         result=test(model, ae_data['test_X'], raw_X, domain, command, template, crf=False)
         results.append(result)
     print(sum(results)/len(results) )
-    
-parser = argparse.ArgumentParser()
-parser.add_argument('--runs', type=int, default=5)
-parser.add_argument('--data_dir', type=str, default="data/prep_data/")
-parser.add_argument('--model_dir', type=str, default="model/")
-parser.add_argument('--domain', type=str, default="laptop")
 
-args = parser.parse_args()
+if __name__ == "__main__":    
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--runs', type=int, default=5)
+    parser.add_argument('--data_dir', type=str, default="data/prep_data/")
+    parser.add_argument('--model_dir', type=str, default="model/")
+    parser.add_argument('--domain', type=str, default="laptop")
 
-if args.domain=='restaurant':
-    command="java -cp script/A.jar absa16.Do Eval -prd data/official_data/pred.xml -gld data/official_data/EN_REST_SB1_TEST.xml.gold -evs 2 -phs A -sbt SB1"
-    template="data/official_data/EN_REST_SB1_TEST.xml.A"
-elif args.domain=='laptop':
-    command="java -cp script/eval.jar Main.Aspects data/official_data/pred.xml data/official_data/Laptops_Test_Gold.xml"
-    template="data/official_data/Laptops_Test_Data_PhaseA.xml"
-    
-evaluate(args.runs, args.data_dir, args.model_dir, args.domain, command, template)
+    args = parser.parse_args()
+
+    if args.domain=='restaurant':
+        command="java -cp script/A.jar absa16.Do Eval -prd data/official_data/pred.xml -gld data/official_data/EN_REST_SB1_TEST.xml.gold -evs 2 -phs A -sbt SB1"
+        template="data/official_data/EN_REST_SB1_TEST.xml.A"
+    elif args.domain=='laptop':
+        command="java -cp script/eval.jar Main.Aspects data/official_data/pred.xml data/official_data/Laptops_Test_Gold.xml"
+        template="data/official_data/Laptops_Test_Data_PhaseA.xml"
+
+    evaluate(args.runs, args.data_dir, args.model_dir, args.domain, command, template)
