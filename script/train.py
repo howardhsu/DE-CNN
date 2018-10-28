@@ -128,19 +128,20 @@ def run(domain, data_dir, model_dir, valid_split, runs, epochs, lr, dropout, bat
         parameters = [p for p in model.parameters() if p.requires_grad]
         optimizer=torch.optim.Adam(parameters, lr=lr)
         train_history, valid_history=train(train_X, train_y, valid_X, valid_y, model, model_dir+domain+str(r), optimizer, parameters, epochs, crf=False)
-    
-parser = argparse.ArgumentParser()
-parser.add_argument('--model_dir', type=str, default="model/")
-parser.add_argument('--batch_size', type=int, default=128)
-parser.add_argument('--epochs', type=int, default=200) 
-parser.add_argument('--runs', type=int, default=5)
-parser.add_argument('--domain', type=str, default="laptop")
-parser.add_argument('--data_dir', type=str, default="data/prep_data/")
-parser.add_argument('--valid', type=int, default=150) #number of validation data.
-parser.add_argument('--lr', type=float, default=0.0001) 
-parser.add_argument('--dropout', type=float, default=0.55) 
 
-args = parser.parse_args()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--model_dir', type=str, default="model/")
+    parser.add_argument('--batch_size', type=int, default=128)
+    parser.add_argument('--epochs', type=int, default=200) 
+    parser.add_argument('--runs', type=int, default=5)
+    parser.add_argument('--domain', type=str, default="laptop")
+    parser.add_argument('--data_dir', type=str, default="data/prep_data/")
+    parser.add_argument('--valid', type=int, default=150) #number of validation data.
+    parser.add_argument('--lr', type=float, default=0.0001) 
+    parser.add_argument('--dropout', type=float, default=0.55) 
 
-run(args.domain, args.data_dir, args.model_dir, args.valid, args.runs, args.epochs, args.lr, args.dropout, args.batch_size)
+    args = parser.parse_args()
+
+    run(args.domain, args.data_dir, args.model_dir, args.valid, args.runs, args.epochs, args.lr, args.dropout, args.batch_size)
 
