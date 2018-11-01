@@ -71,7 +71,8 @@ If you find our code useful, please cite our paper.
 @InProceedings{xu_acl2018,
   author    = {Xu, Hu and Liu, Bing and Shu, Lei and Yu, Philip S.},
   title     = {Double Embeddings and CNN-based Sequence Labeling for Aspect Extraction},
-  booktitle = {ACL},
+  booktitle = {Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics},
+  publisher = {Association for Computational Linguistics},
   year      = {2018}
 }
 ```
