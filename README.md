@@ -1,5 +1,5 @@
 # Double-Embeddings-and-CNN-based-Sequence-Labeling-for-Aspect-Extraction
-Code for paper "[Double Embeddings and CNN-based Sequence Labeling for Aspect Extraction](http://www.aclweb.org/anthology/P18-2094)"
+Code for our ACL 2018 paper "[Double Embeddings and CNN-based Sequence Labeling for Aspect Extraction](http://www.aclweb.org/anthology/P18-2094)"
 
 
 All code are tested under python 3.6.2 + pytorch 0.2.0_4
