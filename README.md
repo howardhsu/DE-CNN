@@ -1,8 +1,15 @@
 # Double-Embeddings-and-CNN-based-Sequence-Labeling-for-Aspect-Extraction
 Code for our ACL 2018 paper "[Double Embeddings and CNN-based Sequence Labeling for Aspect Extraction](http://www.aclweb.org/anthology/P18-2094)"
 
+## Problem to Solve
+
+Label "The retina display is great ." as "O B I O O O" so to extract "retina display" as an aspect.
+
+## Environment
 
 All code are tested under python 3.6.2 + pytorch 0.2.0_4
+
+## Steps to Run Code
 
 Step 1: Download general embeddings (GloVe: http://nlp.stanford.edu/data/glove.840B.300d.zip ), save it in data/embedding/gen.vec 
 
@@ -65,6 +72,8 @@ Evaluate Restaurant dataset
 ```
 python script/evaluation.py --domain restaurant 
 ```
+
+## Citation
 
 If you find our code useful, please cite our paper.
 ```
