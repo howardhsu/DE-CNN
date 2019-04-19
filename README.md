@@ -4,6 +4,7 @@ Code for our ACL 2018 paper "[Double Embeddings and CNN-based Sequence Labeling 
 ## Problem to Solve
 
 Label "The retina display is great ." as "O B I O O O" so to extract "retina display" as an aspect.
+Check this [article](https://howardhsu.github.io/article/absa/) for aspect-based sentiment analysis or [this](https://howardhsu.github.io/article/tdrl/) for domain representation learning.
 
 ## Environment
 
